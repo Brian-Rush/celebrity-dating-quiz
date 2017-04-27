@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row" id="jumbotron-row">
         <header class="jumbotron">
           <h1>Welcome to the Celebrity Dating Quiz-O-Matic-Wonder-Machine!</h1>
         </header>
@@ -18,7 +18,7 @@
       <div class="row" id="form-row">
         <form id="celeb-form">
           <div class="col-md-4 col-md-offset-2">
-            <div class="form-group">
+            <div class="form-group has-error">
               <label for="wiggle">Select your favorite former member of the Wiggles:</label>
               <select class="form-control" name="wiggle" id="wiggle">
                 <option></option>
@@ -29,10 +29,10 @@
                 <option value="murray">Murray Cook</option>
               </select>
             </div>
-            <div class="form-group">
+            <div class="form-group has-error">
               <label for="urkel">Is Urkel Awesome?</label>
               <label class="radio-inline">
-                <input type="radio" name="urkel" value="true">Yes
+                <input id="urkel-true" type="radio" name="urkel" value="true">Yes
               </label>
               <label class="radio-inline">
                 <input type="radio" name="urkel" value="false">No
@@ -56,38 +56,38 @@
           </div>
         </form>
       </div>
-
-      <div class="row" id="urkel">
-        <div class="col-md-12">
-          <img class="img-responsive" src="img/urkel.jpg" alt="photo of urkel" />
+      <div id="celebrities">
+        <div class="row" id="urkel">
+          <div class="col-md-12">
+            <img class="img-responsive" src="img/urkel.jpg" alt="photo of urkel" />
+          </div>
+        </div>
+        <div class="row" id="patsy">
+          <div class="col-md-12">
+            <img class="img-responsive" src="img/patsy.jpg" alt="photo of patsy" />
+          </div>
+        </div>
+        <div class="row" id="gilbert">
+          <div class="col-md-12">
+            <img class="img-responsive" src="img/gilbert.jpg" alt="photo of gilbert" />
+          </div>
+        </div>
+        <div class="row" id="kenneth">
+          <div class="col-md-12">
+            <img class="img-responsive" src="img/kenneth.jpg" alt="photo of kenneth" />
+          </div>
+        </div>
+        <div class="row" id="roseanne">
+          <div class="col-md-12">
+            <img class="img-responsive" src="img/roseanne.jpg" alt="photo of roseanne" />
+          </div>
+        </div>
+        <div class="row" id="shia">
+          <div class="col-md-12">
+            <img class="img-responsive" src="img/shia.jpg" alt="photo of shia" />
+          </div>
         </div>
       </div>
-      <div class="row" id="patsy">
-        <div class="col-md-12">
-          <img class="img-responsive" src="img/patsy.jpg" alt="photo of patsy" />
-        </div>
-      </div>
-      <div class="row" id="gilbert">
-        <div class="col-md-12">
-          <img class="img-responsive" src="img/gilbert.jpg" alt="photo of gilbert" />
-        </div>
-      </div>
-      <div class="row" id="kenneth">
-        <div class="col-md-12">
-          <img class="img-responsive" src="img/kenneth.jpg" alt="photo of kenneth" />
-        </div>
-      </div>
-      <div class="row" id="roseanne">
-        <div class="col-md-12">
-          <img class="img-responsive" src="img/roseanne.jpg" alt="photo of roseanne" />
-        </div>
-      </div>
-      <div class="row" id="shia">
-        <div class="col-md-12">
-          <img class="img-responsive" src="img/shia.jpg" alt="photo of shia" />
-        </div>
-      </div>
-
     </div>
   </body>
 </html>
