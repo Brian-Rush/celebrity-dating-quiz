@@ -18,7 +18,7 @@
       <div class="row" id="form-row">
         <form id="celeb-form">
           <div class="col-md-4 col-md-offset-2">
-            <div class="form-group has-error">
+            <div class="form-group">
               <label for="wiggle">Select your favorite former member of the Wiggles:</label>
               <select class="form-control" name="wiggle" id="wiggle">
                 <option></option>
@@ -28,15 +28,17 @@
                 <option value="jeff">Jeff Fatt</option>
                 <option value="murray">Murray Cook</option>
               </select>
+              <span id="helpBlock1" class="help-block">PICK A WIGGLE!</span>
             </div>
-            <div class="form-group has-error">
+            <div class="form-group" id="urkel-div">
               <label for="urkel">Is Urkel Awesome?</label>
               <label class="radio-inline">
                 <input id="urkel-true" type="radio" name="urkel" value="true">Yes
               </label>
               <label class="radio-inline">
-                <input type="radio" name="urkel" value="false">No
+                <input type="radio" name="urkel" value="false" id="urkel-false">No
               </label>
+              <span id="helpBlock2" class="help-block">ANSWER DAMMIT!</span>
             </div>
           </div>
           <div class="col-md-4">
@@ -49,6 +51,7 @@
                 <option value="echidna">Echidna</option>
                 <option value="opossum">Opossum</option>
               </select>
+              <span id="helpBlock3" class="help-block">MARSUPIALIZE THIS!</span>
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-info">Submit</button>

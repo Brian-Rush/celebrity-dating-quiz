@@ -6,11 +6,6 @@ button[type="submit"] {
   display: none;
 }
 
-.has-error select {
-  border-width: 3px;
-}
-
-.has-error {
-  border: 2px solid red;
-  border-radius: 6px;
+.help-block {
+  display: none;
 }
