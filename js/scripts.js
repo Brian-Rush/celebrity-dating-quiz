@@ -1,3 +1,75 @@
+// Business Logic
+
+var determine = function(wiggle, marsupial) {
+  if (wiggle === "jeff" && marsupial === "koala") {
+    return 'img/patsy.jpg';
+  }
+  if (wiggle === "sam" && marsupial === "opossum") {
+    return'img/patsy.jpg';
+  }
+  if (wiggle === "phil" && marsupial === "echidna") {
+    return 'img/patsy.jpg';
+  }
+  if (wiggle === "greg" && marsupial === "kangaroo") {
+    return 'img/patsy.jpg';
+  }
+
+  if (wiggle === "jeff" && marsupial === "kangaroo") {
+    return 'img/gilbert.jpg';
+  }
+  if (wiggle === "murray" && marsupial === "koala") {
+    return 'img/gilbert.jpg';
+  }
+  if (wiggle === "phil" && marsupial === "opossum") {
+    return 'img/gilbert.jpg';
+  }
+  if (wiggle === "greg" && marsupial === "echidna") {
+    return 'img/gilbert.jpg';
+  }
+
+  if (wiggle === "sam" && marsupial === "koala") {
+    return 'img/kenneth.jpg';
+  }
+  if (wiggle === "murray" && marsupial === "kangaroo") {
+    return 'img/kenneth.jpg';
+  }
+  if (wiggle === "jeff" && marsupial === "echidna") {
+    return 'img/kenneth.jpg';
+  }
+  if (wiggle === "greg" && marsupial === "opossum") {
+    return 'img/kenneth.jpg';
+  }
+
+  if (wiggle === "phil" && marsupial === "koala") {
+    return 'img/roseanne.jpg';
+  }
+  if (wiggle === "sam" && marsupial === "kangaroo") {
+    return 'img/roseanne.jpg';
+  }
+  if (wiggle === "murray" && marsupial === "echidna") {
+    return 'img/roseanne.jpg';
+  }
+  if (wiggle === "jeff" && marsupial === "opossum") {
+    return 'img/roseanne.jpg';
+  }
+
+  if (wiggle === "greg" && marsupial === "koala") {
+    return 'img/shia.jpg';
+  }
+  if (wiggle === "phil" && marsupial === "kangaroo") {
+    return 'img/shia.jpg';
+  }
+  if (wiggle === "sam" && marsupial === "echidna") {
+    return 'img/shia.jpg';
+  }
+  if (wiggle === "murray" && marsupial === "opossum") {
+    return 'img/shia.jpg';
+  }
+}
+
+
+
+// User Interface Logic
 $(document).ready(function() {
   $("input#urkel-true").click(function() {
     window.location = "img/urkel.jpg";
@@ -43,69 +115,6 @@ $(document).ready(function() {
       return;
     }
 
-    if (wiggle === "jeff" && marsupial === "koala") {
-      window.location = 'img/patsy.jpg';
-    }
-    if (wiggle === "sam" && marsupial === "opossum") {
-      window.location = 'img/patsy.jpg';
-    }
-    if (wiggle === "phil" && marsupial === "echidna") {
-      window.location = 'img/patsy.jpg';
-    }
-    if (wiggle === "greg" && marsupial === "kangaroo") {
-      window.location = 'img/patsy.jpg';
-    }
-
-    if (wiggle === "jeff" && marsupial === "kangaroo") {
-      window.location = 'img/gilbert.jpg';
-    }
-    if (wiggle === "murray" && marsupial === "koala") {
-      window.location = 'img/gilbert.jpg';
-    }
-    if (wiggle === "phil" && marsupial === "opossum") {
-      window.location = 'img/gilbert.jpg';
-    }
-    if (wiggle === "greg" && marsupial === "echidna") {
-      window.location = 'img/gilbert.jpg';
-    }
-
-    if (wiggle === "sam" && marsupial === "koala") {
-      window.location = 'img/kenneth.jpg';
-    }
-    if (wiggle === "murray" && marsupial === "kangaroo") {
-      window.location = 'img/kenneth.jpg';
-    }
-    if (wiggle === "jeff" && marsupial === "echidna") {
-      window.location = 'img/kenneth.jpg';
-    }
-    if (wiggle === "greg" && marsupial === "opossum") {
-      window.location = 'img/kenneth.jpg';
-    }
-
-    if (wiggle === "phil" && marsupial === "koala") {
-      window.location = 'img/roseanne.jpg';
-    }
-    if (wiggle === "sam" && marsupial === "kangaroo") {
-      window.location = 'img/roseanne.jpg';
-    }
-    if (wiggle === "murray" && marsupial === "echidna") {
-      window.location = 'img/roseanne.jpg';
-    }
-    if (wiggle === "jeff" && marsupial === "opossum") {
-      window.location = 'img/roseanne.jpg';
-    }
-
-    if (wiggle === "greg" && marsupial === "koala") {
-      window.location = 'img/shia.jpg';
-    }
-    if (wiggle === "phil" && marsupial === "kangaroo") {
-      window.location = 'img/shia.jpg';
-    }
-    if (wiggle === "sam" && marsupial === "echidna") {
-      window.location = 'img/shia.jpg';
-    }
-    if (wiggle === "murray" && marsupial === "opossum") {
-      window.location = 'img/shia.jpg';
-    }
+    window.location = determine(wiggle, marsupial);
   });
 });
